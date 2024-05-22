@@ -1,0 +1,8 @@
+src/.ipynb_checkpoints/ 
+*.tar.gz
+
+src/backend/node_modules
+src/backend/package-lock.json
+src/backend/data
+src/backend/__pycache__/PathFinder.cpython-310.pyc
+src/backend/graph.json

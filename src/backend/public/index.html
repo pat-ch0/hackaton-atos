@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection de station de vélo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <form action="" class="form">
+        <h1>Disponibilité des vélomagg</h1>
+        
+        <div class="station">
+            <label for="station">Choisir une station vélomagg :</label><br>
+            <select id="station" name="station">  
+            </select>
+        </div>
+
+        <div class="date">
+            <label for="date">Date et heure de disponibilité :</label><br>
+            <input type="datetime-local" id="date" name="date" min="" required>
+        </div>
+        <button type="submit" id="submit">Valider</button>
+    </form>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modalText"></p>
+        </div>
+      </div>
+    <div id="map"></div> 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>
